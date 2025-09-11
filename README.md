@@ -1,10 +1,10 @@
-# RML_shiny_PROTEOMIC_3.8.R
+# PROXIMA_4.3.R
 Make descriptive and statistical analysis using DIA-NN or Maxquant output and generate word and excel reports with PCA, heatmaps, volcanoplots...
 
 # Content
-RML_shiny_PROTEOMIC_3.8.R analyses data from Maxquant or DIA-NN softwares and generates 4 files :
+PROXIMA_4.3.R analyses data from Maxquant or DIA-NN or other softwares and generates 4 files :
 - a Word file containing report with many plots including PCA, heatmaps, volcanoplot ...
-- a Excel file containing protein quantifications, student tests results and number of peptides per proteins.
+- a Excel file containing protein quantifications, statistic tests results and number of peptides per proteins (if data are fro DIANN or Maxquant).
 - a txt file containing the same data as the Excel file
 - a .rds file that can be use with Shiny_PROTEOM_IC_viewer script to custom plots.
 
@@ -13,7 +13,7 @@ R4.4.0 or higher
 RStudio 2024.04.1 Build 748 or higher
 
 ## Required data
-To use RML_shiny_PROTEOMIC_3.8.R,
+To use PROXIMA_4.3.R,
 
 For DIA-NN analysis, folder must contain :
 - report.pg_matrix.tsv.txt
@@ -36,7 +36,8 @@ For Maxquant analysis, folder must contain :
 - peptides.txt
 - #runningTimes.txt (found in "combined/proc/" folder)
 
-
+For other analysis :
+- a file containing proteins intensities.
 
 ## Use
-In RStudio, open the RML_shiny_PROTEOMIC_3.8.R file, click on "Run app" and follow idication in "Data" sheets. Think to check, only for the first time, if you have all packages.
+In RStudio, open the PROXIMA_4.2.R file, click on "Run app" and follow indication in "Data" sheets. Think to check, only for the first time, if you have all packages.
