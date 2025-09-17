@@ -32,9 +32,7 @@ params:
     HMsignifparams: null
     MyListeProtAnova: null
     HMAnova: null
-output: 
-  word_document: 
-    reference_docx: H:/systemes/R script/Fiche_CompteRendu_LFQ_v5.docx
+
 editor_options: 
   chunk_output_type: inline
 ---
@@ -1075,3 +1073,4 @@ progress$set(message = "Report in progress : export done", value = 1)
 Samples preparation, LC MS-MS analysis :  
 Proteins identification and quantification using DIANN, Data analysis :  
 Expertise, strategy and Experimental design : 
+
