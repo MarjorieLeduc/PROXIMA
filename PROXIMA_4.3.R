@@ -4109,7 +4109,7 @@ server <- function(input, output, session) {
       on.exit(progress$close())
       progress$set(message = "report in progress", value = 0.1)
       
-      rmarkdown::render("RML_PROXIMA_process_4.3.Rmd", 
+      rmarkdown::render("PROXIMA_process_4.3.Rmd", 
                         output_file = file,
                         output_format = 'word_document',
                         params = list(MyFile=MyFile(),
@@ -4181,4 +4181,5 @@ server <- function(input, output, session) {
 
 
 ####Run----
+
 shinyApp(ui, server)
