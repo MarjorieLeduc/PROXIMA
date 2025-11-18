@@ -1,0 +1,49 @@
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 14 2022 15:31:19
+Current date and time: Fri Apr 28 13:27:41 2023
+CPU: GenuineIntel Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+SIMD instructions: AVX SSE4.1 SSE4.2 
+Logical CPU cores: 40
+diann.exe --f Y:\A49923aA49952\W_125A.d  --f Y:\A49923aA49952\W_125B.d  --f Y:\A49923aA49952\W_125C.d  --f Y:\A49923aA49952\W_167.d  --f Y:\A49923aA49952\W_168.d  --f Y:\A49923aA49952\X_125A.d  --f Y:\A49923aA49952\X_125B.d  --f Y:\A49923aA49952\X_125C.d  --f Y:\A49923aA49952\X_167.d  --f Y:\A49923aA49952\X_168.d  --f Y:\A49923aA49952\NI_P_125A.d  --f Y:\A49923aA49952\NI_P_125B.d  --f Y:\A49923aA49952\NI_P_125C.d  --f Y:\A49923aA49952\NI_P_167.d  --f Y:\A49923aA49952\V_168.d  --f Y:\A49923aA49952\Y_125A.d  --f Y:\A49923aA49952\Y_125B.d  --f Y:\A49923aA49952\Y_125C.d  --f Y:\A49923aA49952\Y_167.d  --f Y:\A49923aA49952\Y_168.d  --f Y:\A49923aA49952\Z_125A.d  --f Y:\A49923aA49952\Z_125B.d  --f Y:\A49923aA49952\Z_125C.d  --f Y:\A49923aA49952\Z_167.d  --f Y:\A49923aA49952\Z_168.d  --f Y:\A49923aA49952\WT_P_125A.d  --f Y:\A49923aA49952\WT_P_125B.d  --f Y:\A49923aA49952\WT_P_125C.d  --f Y:\A49923aA49952\WT_P_167.d  --f Y:\A49923aA49952\U_168.d  --lib H:\sequences\DIA librarys\DiscoveryLibrariesDIANN\archive Library\uniprot_HUMAN_reviewed_mai2022_contaminant_NCBI_HIV1_pNL4-3_Taxo151458.predicted.speclib --threads 35 --verbose 1 --out Y:\A49923aA49952\report.tsv --qvalue 0.01 --matrices --use-quant --relaxed-prot-inf --smart-profiling --peak-center --no-ifs-removal --no-norm 
+
+Thread number set to 35
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+Existing .quant files will be used
+Highly heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers; use with caution for anything else
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+Fixed-width center of each elution peak will be used for quantification
+Interference removal from fragment elution curves disabled
+Normalisation disabled
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+30 files will be processed
+[0:00] Loading spectral library H:\sequences\DIA librarys\DiscoveryLibrariesDIANN\archive Library\uniprot_HUMAN_reviewed_mai2022_contaminant_NCBI_HIV1_pNL4-3_Taxo151458.predicted.speclib
+[0:22] Library annotated with sequence database(s): H:\sequences\uniprot_HUMAN_reviewed_mai2022_contaminant_NCBI_HIV1_pNL4-3_Taxo151458.fasta
+[0:22] Protein names missing for some isoforms
+[0:22] Gene names missing for some isoforms
+[0:22] Library contains 20362 proteins, and 20147 genes
+[0:23] Spectral library loaded: 20510 protein isoforms, 28985 protein groups and 3502543 precursors in 1714699 elution groups.
+[0:23] Initialising library
+
+[0:27] Cross-run analysis
+[0:27] Reading quantification information: 30 files
+[0:45] Quantifying peptides
+[0:49] Assembling protein groups
+[0:52] Quantifying proteins
+[0:53] Calculating q-values for protein and gene groups
+[0:56] Calculating global q-values for protein and gene groups
+[0:56] Writing report
+[4:03] Report saved to Y:\A49923aA49952\report.tsv.
+[4:03] Saving precursor levels matrix
+[4:07] Precursor levels matrix (1% precursor and protein group FDR) saved to Y:\A49923aA49952\report.pr_matrix.tsv.
+[4:07] Saving protein group levels matrix
+[4:07] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to Y:\A49923aA49952\report.pg_matrix.tsv.
+[4:07] Saving gene group levels matrix
+[4:08] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to Y:\A49923aA49952\report.gg_matrix.tsv.
+[4:08] Saving unique genes levels matrix
+[4:08] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to Y:\A49923aA49952\report.unique_genes_matrix.tsv.
+[4:08] Stats report saved to Y:\A49923aA49952\report.stats.tsv
+
+Finished
+
