@@ -1,4 +1,4 @@
-# PROXIMA_4.3.R
+# PROXIMA.R
 Make descriptive and statistical analysis using DIA-NN or Maxquant output and generate word and excel reports with PCA, heatmaps, volcanoplots...
 
 # Content
@@ -13,7 +13,7 @@ R4.4.0 or higher
 RStudio 2024.04.1 Build 748 or higher
 
 ## Required data
-To use PROXIMA_4.3.R,
+To use PROXIMA.R,
 
 For DIA-NN analysis, folder must contain :
 - report.pg_matrix.tsv.txt
